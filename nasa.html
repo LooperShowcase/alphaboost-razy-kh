@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <title>nasa info</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   
+ 
+    <div id="div 1">
+      <ul id="navbar">
+        <li id="li"><a href="welcome.html">welcome</a> </li>
+        
+        <li id="li"><a class="active" href="nasa.html">Nasa</a></li>
+        <li id="li"><a href="jamesweb.html">James webb</a></li>
+        <li id="li"><a href="supernova.html">Supernova</a></li>
+        <li id="li"><a href="the moon landing.html">The moon landing</a></li>
+        <li id="li"><a class="active" href="index.html">log out</a></li>
+        <li id="li">   <input onchange="changebackgroundo()" type="color" id="colorpick" /></li>
+        <img
+          style="float: right"
+          src="https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+          width="5%"
+          id="profilepic"
+        />
+
+      </li>
+      </ul>
+    
+   
+      <br><br><br>
+      <button onclick="changebackground()">background blue</button>
+      <br /><br /><br /><br />
+      <button onclick="changebackgroundc()">background normal</button>
+      <br /><br /><br /><br />
+      <input onchange="changeprofilepicture()" type="file" name="" id="upload" />
+      <center>
+        <h1>NASA</h1>
+      </center>
+      <hr />
+      <p>
+        nasa stands for (National Aeronautics and Space Administration) <br />
+        NASA was established in 1958, succeeding the National Advisory Committee
+        for Aeronautics (NACA), to give the US space development effort a
+        distinctly civilian orientation, emphasizing peaceful applications in
+        space science.<br />
+        Since its establishment, most American space exploration efforts have
+        been led by NASA, including the Apollo Moon landing missions, the Skylab
+        space station, and later the Space Shuttle.<br />
+        NASA's science is focused on better understanding Earth through the
+        Earth Observing System; advancing heliophysics through the efforts of
+        the Science Mission Directorate's Heliophysics Research
+        Program;exploring bodies throughout the Solar System with advanced
+        robotic spacecraft such as New Horizons; and researching astrophysics
+        topics, such as the Big Bang, through the Great Observatories and
+        associated programs.
+      </p>
+      <br />
+      <h2>administrators</h2>
+      <ol>
+        <li>Bill Nelson</li>
+        <li>Steve Jurczyk</li>
+        <li>Jim Bridenstine</li>
+        <li>robert M. Lightfoot Jr.</li>
+        <li>Charles Bolden</li>
+      </ol>
+      <br />
+      <h2>Nasa space shutle</h2>
+      <ul>
+        <li>The Mercury Seven</li>
+        <li>The New Nine</li>
+        <li>The Fourteen</li>
+        <li>The Scientists</li>
+        <li>he Original 19</li>
+      </ul>
+      <a href="https://en.wikipedia.org/wiki/NASA">for more info click on me</a>
+      <hr />
+      <center>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/NASA_seal.svg/180px-NASA_seal.svg.png"
+          width="20%"
+          height="35%"
+        />
+      </center>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/NASA_HQ_Building.jpg/220px-NASA_HQ_Building.jpg"
+        width="20%"
+        height="35%"
+      />
+      <br />
+      <h2>the nasa headquarters in Washington, D.C.</h2>
+      <table>
+        <tr>
+          <td>Name</td>
+          <td>Took office</td>
+          <td>Left office</td>
+        </tr>
+
+        <tr>
+          <td>Bill Nelson</td>
+          <td>May 3, 2021</td>
+          <td>Incumbent</td>
+        </tr>
+
+        <tr>
+          <td>Steve Jurczyk</td>
+          <td>January 20, 2021</td>
+          <td>May 3, 2021</td>
+        </tr>
+
+        <tr>
+          <td>Jim Bridenstine</td>
+          <td>April 23, 2018</td>
+          <td>January 20, 2021</td>
+        </tr>
+      </table>
+    </div>
+    <script>
+     
+      var name = document.getElementById("first").innerText;
+      console.log(name);
+
+      function changeText() {
+        document.getElementById("first").innerText = "hello";
+      }
+      function changebackground() {
+        document.body.style.background = "blue";
+      }
+      function changebackgroundc() {
+        document.body.style.background = "linear-gradient(to right,red,green,blue,yellow )";
+      }
+      function changebackgroundo() {
+        var color = document.getElementById("colorpick").value;
+        document.body.style.background = color;
+      }
+      function changeprofilepicture(){
+  var newimage = document.getElementById("upload").files[0].name;
+  document.getElementById("profilepic").src = newimage;
+}
+
+
+    </script>
+  </body>
+</html>

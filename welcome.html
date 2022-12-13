@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul id="navbar">
+      <li id="li"><a href="welcome.html">welcome</a> </li>
+     
+      <li id="li"><a class="active" href="nasa.html">Nasa</a></li>
+      <li id="li"><a href="jamesweb.html">James webb</a></li>
+      <li id="li"><a href="supernova.html">Supernova</a></li>
+      <li id="li"><a href="the moon landing.html">The moon landing</a></li>
+     
+      <li id="li">   <input onchange="changebackgroundo()" type="color" id="colorpick" /></li>
+      <img
+        style="float: right"
+        src="https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+        width="5%"
+        id="profilepic"
+      />
+    </li>
+    
+    </ul>
+    <h1 id="first">welcome</h1>
+    <ul id="list">
+      
+      
+    </ul>
+    <input type="text" id="addedtext">
+    <button onclick=" addyolist()">add</button>
+    <br /><br /><br /><br />
+    <button onclick="changeText()">HELLO</button>
+    <br /><br /><br /><br />
+
+    <button onclick="changebackground()">background blue</button>
+    <br /><br /><br /><br />
+    <button onclick="changebackgroundc()">background normal</button>
+    <br /><br /><br /><br />
+    
+    
+    
+    
+    
+
+    <script>
+      var name = document.getElementById("first").innerText;
+      console.log(name);
+
+      function changeText() {
+        document.getElementById("first").innerText = "HELLO";
+      }
+
+      function changebackground() {
+        document.body.style.background = "blue";
+      }
+      function changebackgroundc() {
+        document.body.style.background =
+          "linear-gradient(to right,red,green,blue,yellow )";
+      }
+      function changebackgroundo() {
+        var color = document.getElementById("colorpick").value;
+        document.body.style.background = color;
+      }
+
+function changeprofilepicture(){
+  var newimage = document.getElementById("upload").files[0].name;
+}
+
+
+function checkUserAndPassword() {
+        var username = document.getElementById("typedUsername").value;
+        var password = document.getElementById("typedPassword").value;
+
+
+        if (username === "razy" && password === "Razy23") {
+          window.location.href = "nasa.html";
+        } else if (username === "razy" && password === "Razy06") {
+          window.location.href = "jamesweb.html";
+        } else {
+          alert("Wrong password. You cannot enter." );
+        }
+      }
+  
+    </script>
+  </body>
+</html>

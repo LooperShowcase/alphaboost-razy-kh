@@ -1,0 +1,84 @@
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the moon landing</title>
+</head>
+<body>
+ 
+    <ul id="navbar">
+      <li id="li"><a href="welcome.html">welcome</a> </li>
+        
+        <li id="li"><a class="active" href="nasa.html">NASA</a></li>
+        <li id="li"><a href="jamesweb.html">James Webb</a></li>
+        <li id="li"><a href="supernova.html">supernova</a></li>
+        <li id="li"><a href="the moon landing.html">the moon landing</a></li>
+        <li id="li"><a class="active" href="index.html">Log Out</a></li>
+        <li id="li">   <input onchange="changebackgroundo()" type="color" id="colorpick" /></li>
+        <img
+          style="float: right"
+          src="https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+          width="5%"
+        />
+      </li>
+      </ul>
+      <button onclick="changebackground()">background blue</button>
+    <br /><br /><br /><br />
+    <button onclick="changebackgroundc()">background normal</button>
+    <br /><br /><br /><br />
+      <h1>The First Moon Landing </h1>
+      <p>
+        Apollo 11 (July 16–24, 1969) was the American spaceflight that first landed humans on the Moon.<br>
+         Commander Neil Armstrong and lunar module pilot Buzz Aldrin landed the Apollo Lunar Module Eagle on July 20, 1969, at 20:17 UTC, and Armstrong became the first person to step onto the Moon's surface six hours and 39 minutes later, on July 21 at 02:56 UTC.<br>
+          Aldrin joined him 19 minutes later, and they spent about two and a quarter hours together exploring the site they had named Tranquility Base upon landing.<br>
+      </p>
+      <center>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Aldrin_Apollo_11_original.jpg/260px-Aldrin_Apollo_11_original.jpg" width="250px"height="200PX">
+      </center>
+      <br>
+      <br>
+      <br>
+      <a href="https://en.wikipedia.org/wiki/Apollo_11">click here for more info</a>
+<br>
+<br>
+<br>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S9HdPi9Ikhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+<script>
+  
+  var name = document.getElementById("first").innerText;
+      console.log(name);
+
+      function changeText() {
+        document.getElementById("first").innerText = "hello";
+      }
+      function changebackground() {
+        document.body.style.background = "blue";
+      }
+      function changebackgroundc() {
+        document.body.style.background = "linear-gradient(to right,red,green,blue,yellow )";
+      }
+      function changebackgroundo() {
+        var color = document.getElementById("colorpick").value;
+        document.body.style.background = color;
+      }
+      function changeprofilepicture(){
+  var newimage = document.getElementById("upload").files[0].name;
+  document.getElementById("profilepic").src = newimage;
+}
+
+ 
+
+</script>
+      </body>
+      </html>
+      

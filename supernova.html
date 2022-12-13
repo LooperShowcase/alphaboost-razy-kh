@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>supernova</title>
+  </head>
+  <body>
+   
+    <ul id="navbar">
+      <li id="li"><a href="welcome.html">welcome</a> </li>
+     
+      <li id="li"><a class="active" href="nasa.html">Nasa</a></li>
+      <li id="li"><a href="jamesweb.html"> James webb</a></li>
+      <li id="li"><a href="supernova.html">SupernNova</a></li>
+      <li id="li"><a href="the moon landing.html">The Moon Landing</a></li>
+      <li id="li"><a class="active" href="index.html">log out</a></li>
+      <li id="li">   <input onchange="changebackgroundo()" type="color" id="colorpick" /></li>
+      <img
+        style="float: right"
+        src="https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+        width="5%"
+        id="profilepic"
+      />
+    </li>
+    </ul>
+    <button onclick="changebackground()">background blue</button>
+    <br /><br /><br /><br />
+    <button onclick="changebackgroundc()">background normal</button>
+    <br /><br /><br /><br />
+    <input onchange="changeprofilepicture()" type="file" name="" id="upload" />
+    <h1>Supernova</h1>
+    <p>
+      Compared to a star's entire history, the visual appearance of a supernova
+      is very brief, sometimes spanning several months,<br />
+      so that the chances of observing one with the naked eye is roughly once in
+      a lifetime.<br />
+      Only a tiny fraction of the 100 billion stars in a typical galaxy have the
+      capacity to become a supernova,<br />
+      being restricted to those having high mass and rare kinds of binary stars
+      containing white dwarfs.
+    </p>
+    <center>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Crab_Nebula.jpg/200px-Crab_Nebula.jpg"
+        width="250px"
+        height="200PX"
+      />
+      <Br><Br><Br><Br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/GQ13j55P3sE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+      <Br><Br><Br><Br>
+      <a href="https://en.wikipedia.org/wiki/Supernova"
+      >click here for more info
+    </a>
+  </center>
+    <script>
+      
+      var name = document.getElementById("first").innerText;
+      console.log(name);
+
+      function changeText() {
+        document.getElementById("first").innerText = "hello";
+      }
+      function changebackground() {
+        document.body.style.background = "blue";
+      }
+      function changebackgroundc() {
+        document.body.style.background = "linear-gradient(to right,red,green,blue,yellow )";
+      }
+      function changebackgroundo() {
+        var color = document.getElementById("colorpick").value;
+        document.body.style.background = color;
+      }
+       function changeprofilepicture(){
+  var newimage = document.getElementById("upload").files[0].name;
+  document.getElementById("profilepic").src = newimage;
+}
+    </script>
+  </body>
+</html>

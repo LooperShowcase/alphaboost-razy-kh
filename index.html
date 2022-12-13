@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div></div>
+        <div class="grid-item">
+          <h2>username:</h2 id="up">  <input id="typedUsername" name="username1" type="text" /><br />
+         
+        </div>
+        <div></div>
+        <div></div>
+        <div class="grid-item">
+          <h2>password:</h2 id="up">   <input id="typedPassword" name="password1" type="password" /><br />
+        
+        </div>
+        <div></div>
+        <div></div>
+        <div class="grid-item">      <input type="button" onclick="checkUserAndPassword()" value="log in" />
+          
+        <div></div>
+      </div> 
+      <script>
+ function checkUserAndPassword() {
+        var username = document.getElementById("typedUsername").value;
+        var password = document.getElementById("typedPassword").value;
+
+
+        if (username === "razy" && password === "Razy23") {
+          window.location.href = "nasa.html";
+        } else if (username === "razy" && password === "Razy06") {
+          window.location.href = "jamesweb.html";
+        } else {
+          alert("Wrong password. You cannot enter." );
+        }
+      }
+      </script>
+</body>
+</html>

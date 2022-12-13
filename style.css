@@ -1,0 +1,162 @@
+h1 {
+  color: black;
+  font-size: 50px;
+}
+
+body {
+  font-family: "sans-serif";
+}
+h2 {
+  color: rgb(61, 61, 117);
+  font-size: 20px;
+}
+h3 {
+  color: brown;
+  font-size: 50px;
+}
+h4 {
+  color: darkgrey;
+  font-size: 40px;
+}
+h5 {
+  color: darkgreen;
+  font-size: 30px;
+}
+h6 {
+  color: ghostwhite;
+  font-size: 20px;
+}
+p {
+  color: rgb(19, 46, 87);
+  font-size: 20px;
+}
+h3 {
+  background-color: blueviolet;
+}
+h3 {
+  background-color: brown;
+}
+h3 {
+  background-color: aquamarine;
+}
+hr {
+  color: aliceblue;
+}
+ol {
+  color: rgb(5, 32, 16);
+  font-size: 20px;
+}
+ul {
+  color: rgb(28, 32, 5);
+  font-size: 20px;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 20px;
+}
+#div1 {
+  background-image: linear-gradient(to right, blue, green, red, yellow);
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#li {
+  float: left;
+}
+
+#li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#li a:hover {
+  background-color: #111;
+}
+img {
+  border-radius: 60px;
+}
+#ul4 {
+  color: aquamarine;
+}
+.dark-mode {
+  background-color: aqua;
+  color: rgb(50, 71, 11);
+}
+.button {
+  padding: 2 px 8 px;
+  font-size: 10 px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(145, 167, 102);
+  border: none;
+  border-radius: 5 px;
+  box-shadow: 0 2 px #999;
+}
+
+.button:hover {
+  background-color: aqua;
+}
+
+.button:active {
+  background-color: rgb(145, 167, 102);
+  box-shadow: 0 2 px #666;
+  transform: translateY(4 px);
+}
+body {
+  background-image: linear-gradient(to right, red, green, blue, yellow);
+}
+#up {
+  font-color: #111;
+}
+#hr3 {
+  border: none;
+  border-top: 1px dashed rgb(16, 157, 124);
+  height: 1px;
+}
+#hr4 {
+  border-left: 6px;
+  border-top: 1px dashed rgb(16, 157, 124);
+  height: 1px;
+}
+#d {
+  border-left: 6px solid green;
+  height: 50px;
+}
+
+div.test {
+  background-color: #ee9;
+  padding: 5px;
+}
+body {
+  font-family: Arial;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  border: 1.75px solid rgb(119, 130, 16);
+  text-align: center;
+  
+}

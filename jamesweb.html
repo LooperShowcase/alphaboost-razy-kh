@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jamesweb</title>
+</head>
+<body>
+
+    <ul id="navbar">
+      <li id="li"><a href="welcome.html">welcome</a> </li>
+       
+        <li id="li"><a class="active" href="nasa.html">Nasa</a></li>
+        <li id="li"><a href="jamesweb.html">James webb</a></li>
+        <li id="li"><a href="supernova.html">Supernova</a></li>
+        <li id="li"><a href="the moon landing.html">The moon landing</a></li>
+        <li id="li"><a class="active" href="index.html">log out</a></li>
+        <li id="li">   <input onchange="changebackgroundo()" type="color" id="colorpick" /></li>
+        <img
+          style="float: right"
+          src="https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+          width="5%"
+          id="profilepic"
+        />
+      </li>
+      </ul>
+      <link rel="stylesheet" href="style.css" />
+      <button onclick="changebackground()">background blue</button>
+    <br /><br /><br /><br />
+    <button onclick="changebackgroundc()">background normal</button>
+    <br /><br /><br /><br />
+    <input onchange="changeprofilepicture()" type="file" name="" id="upload" />
+      <h1>james web</h1>
+      <p>
+  
+        The James Webb Space Telescope (JWST) is a space telescope which conducts infrared astronomy.<br>
+           As the largest optical telescope in space, its high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope.<br>
+         This will enable investigations across many fields of astronomy and cosmology, such as observation of the first stars, the formation of the first galaxies, and detailed atmospheric characterization of potentially habitable exoplanets.
+  <center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/James_Webb_Space_Telescope_2009_top.jpg/375px-James_Webb_Space_Telescope_2009_top.jpg">
+</center>
+
+<ul id="ul4">
+    <li>Bill Ochs. project manager</li>
+    <li>John Mather. senior project scientist.</li>
+    <li>Gregory L. Robinson.</li>
+    <li>Mike Davis</li>
+  </ul>
+<br>
+
+  
+  
+  <center>
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/eeuNZTpMdWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </center>
+  <br>
+  <br>
+  <h2>
+  <a href="https://en.wikipedia.org/wiki/James_Webb_Space_Telescope">for more info click here</a>
+  <a href="https://en.wikipedia.org/wiki/Supernova"
+</h2>
+<script>
+ 
+  var name = document.getElementById("first").innerText;
+      console.log(name);
+
+      function changeText() {
+        document.getElementById("first").innerText = "hello";
+      }
+      function changebackground() {
+        document.body.style.background = "blue";
+      }
+      function changebackgroundc() {
+        document.body.style.background = "linear-gradient(to right,red,green,blue,yellow )";
+      }
+      function changebackgroundo() {
+        var color = document.getElementById("colorpick").value;
+        document.body.style.background = color;
+      }
+      function changeprofilepicture(){
+  var newimage = document.getElementById("upload").files[0].name;
+  document.getElementById("profilepic").src = newimage;
+}
+</script>
+</body>
+</html>
